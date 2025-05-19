@@ -1,0 +1,56 @@
+
+# General settings
+app:
+  name: Preventive Healthcare Chatbot
+  version: 1.0.0
+  description: A chatbot providing preventive healthcare information and guidance
+  environment: development  # development, testing, production
+
+# API settings
+api:
+  host: 0.0.0.0
+  port: 5000
+  debug: true
+  cors_origins: ["*"]  # In production, specify exact domains
+  request_timeout: 60  # seconds
+
+# Model settings
+models:
+  llm:
+    provider: mock  # mock, openai, anthropic, etc.
+    model_name: mock-healthcare-model
+    temperature: 0.7
+    max_tokens: 1000
+    system_prompt: "You are a helpful healthcare assistant providing evidence-based preventive healthcare information."
+  
+  embedding:
+    provider: mock
+    model_name: mock-embeddings
+    dimensions: 384
+
+# Retrieval settings
+retrieval:
+  top_k: 3
+  similarity_threshold: 0.75
+  reranking_enabled: false
+
+# Security settings
+security:
+  api_key_required: true
+  default_api_key_enabled: true  # Only for development
+  rate_limit:
+    enabled: true
+    max_requests: 100
+    time_window: 3600  # seconds (1 hour)
+
+# Content safety
+safety:
+  input_validation_enabled: true
+  output_validation_enabled: true
+  content_moderation_enabled: true
+  medical_disclaimer_required: true
+
+# Feedback
+feedback:
+  collection_enabled: true
+  store_interactions: true

@@ -1,0 +1,15 @@
+flask
+streamlit
+python-dotenv
+pyyaml
+requests
+sqlalchemy
+pandas
+numpy
+python-jose
+passlib
+loguru
+dotenv
+pycryptodome
+flask-cors
+eth-account

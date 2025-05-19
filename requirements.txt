@@ -1,0 +1,46 @@
+# Core dependencies
+flask==2.3.3
+flask-cors==4.0.0
+streamlit==1.30.0
+python-dotenv==1.0.0
+pyyaml==6.0.1
+requests==2.31.0
+
+# Database related
+sqlalchemy==2.0.23
+
+
+# Data processing
+pandas==2.1.1
+numpy==1.26.0
+
+# Security
+python-jose==3.3.0
+passlib==1.7.4
+
+# Logging
+loguru==0.7.2
+
+# API Documentation
+flask-openapi3==2.5.0
+
+# Testing
+pytest==7.4.2
+pytest-cov==4.1.0
+
+# Wallet
+requests
+pycryptodome
+flask-cors
+flask
+# Vector embeddings (uncomment as needed)
+# sentence-transformers==2.2.2
+# pinecone-client==2.2.2
+# weaviate-client==3.24.1
+# qdrant-client==1.4.0
+
+# LLM integrations (uncomment as needed)
+# openai==1.5.0
+# anthropic==0.8.1
+# langchain==0.0.325
+# llama-index==0.8.54

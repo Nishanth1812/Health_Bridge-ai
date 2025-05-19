@@ -1,0 +1,16 @@
+2025-05-18 20:37:59,698 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.113.20.107:5000
+2025-05-18 20:37:59,700 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 20:38:13,937 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 20:38:13] "[33mGET / HTTP/1.1[0m" 404 -
+2025-05-18 20:38:14,036 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 20:38:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-18 21:17:36,280 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.193.198:5000
+2025-05-18 21:17:36,281 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-18 21:17:39,640 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 21:17:39] "GET / HTTP/1.1" 200 -
+2025-05-18 21:18:56,338 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 21:18:56] "GET / HTTP/1.1" 200 -
+2025-05-18 21:47:34,606 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 21:47:34] "[33mPOST /chat/ HTTP/1.1[0m" 404 -
+2025-05-18 22:11:47,713 - werkzeug - INFO - 127.0.0.1 - - [18/May/2025 22:11:47] "[33mPOST /chat/ HTTP/1.1[0m" 404 -

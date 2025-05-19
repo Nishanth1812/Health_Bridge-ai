@@ -1,0 +1,67 @@
+vector_db: faiss
+"""
+Database configuration settings
+"""
+# Vector database settings
+vector_db:
+  provider: inmemory  # inmemory, pinecone, weaviate, qdrant, etc.
+  collection_name: healthcare_knowledge
+  dimensions: 384
+  metric: cosine
+  
+  # Provider-specific settings (used when provider is not inmemory)
+  pinecone:
+    api_key: ${PINECONE_API_KEY}
+    environment: ${PINECONE_ENVIRONMENT}
+    index_name: healthcare-index
+  
+  weaviate:
+    url: ${WEAVIATE_URL}
+    auth_api_key: ${WEAVIATE_API_KEY}
+    class_name: HealthcareArticle
+  
+  qdrant:
+    url: ${QDRANT_URL}
+    api_key: ${QDRANT_API_KEY}
+    collection_name: healthcare_knowledge
+
+# Relational database settings
+relational_db:
+  provider: sqlite  # sqlite, postgres, mysql
+  connection_string: sqlite:///data/app.db
+  
+  # Provider-specific settings
+  postgres:
+    host: ${POSTGRES_HOST}
+    port: ${POSTGRES_PORT}
+    database: healthcare_bot
+    user: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    ssl_mode: require
+  
+  mysql:
+    host: ${MYSQL_HOST}
+    port: ${MYSQL_PORT}
+    database: healthcare_bot
+    user: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+
+# Cache settings
+cache:
+  provider: memory  # memory, redis
+  ttl: 3600  # Time to live in seconds
+  
+  # Redis settings (when provider is redis)
+  redis:
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT}
+    password: ${REDIS_PASSWORD}
+    db: 0
+    ttl: 3600
+
+# Connection pooling
+connection_pooling:
+  max_connections: 10
+  pool_recycle: 3600
+  pool_timeout: 30
+  max_overflow: 20
